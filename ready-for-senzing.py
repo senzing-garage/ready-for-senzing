@@ -427,6 +427,54 @@ def exit_silently():
     sys.exit(0)
 
 # -----------------------------------------------------------------------------
+# tests before Senzing is installed.
+# -----------------------------------------------------------------------------
+
+def test_db_():
+    pass
+
+def test_db_postgres():
+    pass
+
+def test_db_postgres_senzing_schema():
+    pass
+
+def test_docker_reachability():
+    pass
+
+def test_queue():
+    pass
+
+def test_queue_kafka():
+    pass
+
+def test_queue_rabbitmq():
+    pass
+
+def test_queue_sqs():
+    pass
+
+def test_volumes():
+    pass
+
+def test_volumes_post():
+    pass
+
+def test_volumes_pre():
+    pass
+
+
+# -----------------------------------------------------------------------------
+# tests after Senzing is installed.
+# -----------------------------------------------------------------------------
+
+def test_senzing_install():
+    pass
+
+def test_senzing_configuration():
+    pass
+
+# -----------------------------------------------------------------------------
 # do_* functions
 #   Common function signature: do_XXX(args)
 # -----------------------------------------------------------------------------
