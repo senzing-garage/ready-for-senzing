@@ -1,23 +1,9 @@
 #! /usr/bin/env python3
 
 # -----------------------------------------------------------------------------
-# template-python.py Example python skeleton.
-# Can be used as a boiler-plate to build new python scripts.
-# This skeleton implements the following features:
-#   1) "command subcommand" command line.
-#   2) A structured command line parser and "-help"
-#   3) Configuration via:
-#      3.1) Command line options
-#      3.2) Environment variables
-#      3.3) Configuration file
-#      3.4) Default
-#   4) Messages dictionary
-#   5) Logging and Log Level support.
-#   6) Entry / Exit log messages.
-#   7) Docker support.
+# ready-for-senzing.py
 # -----------------------------------------------------------------------------
 
-from glob import glob
 import argparse
 import json
 import linecache
@@ -28,11 +14,11 @@ import sys
 import time
 
 __all__ = []
-__version__ = "1.0.0"  # See https://www.python.org/dev/peps/pep-0396/
-__date__ = '2019-07-16'
-__updated__ = '2020-07-23'
+__version__ = "0.1.0"  # See https://www.python.org/dev/peps/pep-0396/
+__date__ = '2022-03-01'
+__updated__ = '2022-08-05'
 
-SENZING_PRODUCT_ID = "5xxx"  # See https://github.com/Senzing/knowledge-base/blob/main/lists/senzing-product-ids.md
+SENZING_PRODUCT_ID = "5029"  # See https://github.com/Senzing/knowledge-base/blob/master/lists/senzing-product-ids.md
 log_format = '%(asctime)s %(message)s'
 
 # Working with bytes.
@@ -439,6 +425,54 @@ def exit_error(index, *args):
 def exit_silently():
     ''' Exit program. '''
     sys.exit(0)
+
+# -----------------------------------------------------------------------------
+# tests before Senzing is installed.
+# -----------------------------------------------------------------------------
+
+def test_db_():
+    pass
+
+def test_db_postgres():
+    pass
+
+def test_db_postgres_senzing_schema():
+    pass
+
+def test_docker_reachability():
+    pass
+
+def test_queue():
+    pass
+
+def test_queue_kafka():
+    pass
+
+def test_queue_rabbitmq():
+    pass
+
+def test_queue_sqs():
+    pass
+
+def test_volumes():
+    pass
+
+def test_volumes_post():
+    pass
+
+def test_volumes_pre():
+    pass
+
+
+# -----------------------------------------------------------------------------
+# tests after Senzing is installed.
+# -----------------------------------------------------------------------------
+
+def test_senzing_install():
+    pass
+
+def test_senzing_configuration():
+    pass
 
 # -----------------------------------------------------------------------------
 # do_* functions
